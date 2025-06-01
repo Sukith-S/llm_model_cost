@@ -76,4 +76,4 @@ class ModelCost:
         """Get all models of a specific mode."""
         return cls._calculator.get_models_by_mode(mode)
 
-__version__ = "0.1.3" 
+__version__ = "0.1.4" 
