@@ -15,17 +15,18 @@ https://pypi.org/project/llm-model-cost/
 from llm_model_cost import ModelCost
 
 # Calculate cost for a model
-cost = ModelCost(name="gpt-4", input_tokens=100, output_tokens=50)
+costInfo = ModelCost(name="gpt-4", input_tokens=100, output_tokens=50)
 
 # Get cost details
-print(f"Input cost: ${cost['input_cost']:.6f}")
-print(f"Output cost: ${cost['output_cost']:.6f}")
-print(f"Total cost: ${cost['total_cost']:.6f}")
+print(f"Input cost: ${costInfo.input_cost:.6f}")
+print(f"Output cost: ${costInfo.output_cost:.6f}")
+print(f"Total cost: ${costInfo.cost:.6f}")
 
 # Get model information
 model_info = ModelCost.get_model_info("gpt-4")
 print(f"Max tokens: {model_info['max_tokens']}")
 print(f"Provider: {model_info['litellm_provider']}")
+
 
 # List all available models
 models = ModelCost.list_models()
@@ -38,6 +39,3 @@ models = ModelCost.list_models()
 - List all available models and their capabilities
 - Automatic updates from the latest pricing data
 
-## License
-
-MIT License 
