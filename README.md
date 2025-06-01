@@ -37,7 +37,3 @@ models = ModelCost.list_models()
 - Get model information including max tokens, costs, and provider details
 - List all available models and their capabilities
 - Automatic updates from the latest pricing data
-
-## License
-
-MIT License 
