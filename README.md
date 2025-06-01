@@ -7,6 +7,7 @@ A Python package to calculate token costs for various LLM models based on input 
 ```bash
 pip install llm_model_cost
 ```
+https://pypi.org/project/llm-model-cost/
 
 ## Usage
 
@@ -37,3 +38,4 @@ models = ModelCost.list_models()
 - Get model information including max tokens, costs, and provider details
 - List all available models and their capabilities
 - Automatic updates from the latest pricing data
+
