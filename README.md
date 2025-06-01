@@ -7,6 +7,7 @@ A Python package to calculate token costs for various LLM models based on input 
 ```bash
 pip install llm_model_cost
 ```
+https://pypi.org/project/llm-model-cost/
 
 ## Usage
 
