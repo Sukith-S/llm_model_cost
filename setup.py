@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="llm_model_cost",
     version="1.1.0",
-    packages=find_packages(),
+    packages=find_packages(exclude=["tests", "tests.*"]),
     install_requires=[
         "requests",
     ],
